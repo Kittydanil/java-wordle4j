@@ -11,4 +11,21 @@ public class WordleDictionary {
 
     private List<String> words;
 
+    public void setWords(List<String> words) {
+        this.words = words;
+    }
+
+    public List<String> getWords() {
+        return words;
+    }
+
+    public void turnLetter() {
+        for (String word : words) {
+            if (word.contains("ё")) {
+                int index = word.indexOf("ё");
+                words.set(words.indexOf(word),
+                        new StringBuilder(word).replace(index, index + 1, "е").toString());
+            }
+        }
+    }
 }
