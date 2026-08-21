@@ -14,10 +14,12 @@ import java.util.List;
  */
 public class WordleDictionaryLoader {
 
+    private static final String FILE_NAME = "words_ru.txt";
+
     public WordleDictionary readFile() {
         WordleDictionary dictionary = new WordleDictionary();
         List<String> words = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("words_ru.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             while (reader.ready()) {
                 String line = reader.readLine();
                 if (line.length() == 5) {

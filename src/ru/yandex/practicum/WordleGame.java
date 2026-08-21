@@ -104,15 +104,7 @@ public class WordleGame {
     } // нужно переделать логику подбора подходящих слов!!!
 
     private String turnLetter(String word) {
-        String newWord;
-
-        if (word.contains("ё")) {
-            int index = word.indexOf("ё");
-            newWord = new StringBuilder(word).replace(index, index + 1, "е").toString();
-        } else {
-            newWord = word;
-        }
-        return newWord;
+        return word.replace("ё","е");
     }
 
     public int getSteps() {

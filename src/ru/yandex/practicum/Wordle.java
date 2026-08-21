@@ -53,7 +53,6 @@ public class Wordle {
                     if (!word.equals(game.getAnswer())) {
                         System.out.println("> " + game.equalsWords(word));
                     } else {
-                        System.out.println("Вы победили!");
                         running = false;
                     }
                     continue;
@@ -75,7 +74,7 @@ public class Wordle {
                             running = false;
                         }
                     } catch (InvalidInputException e) {
-                        Logger.logError(e.getMessage());
+                        Logger.logException(e);
                         System.out.println("Ошибка ввода: " + e.getMessage());
                     } catch (Exception e) {
                         Logger.logException(e);

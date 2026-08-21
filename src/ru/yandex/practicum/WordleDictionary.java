@@ -21,11 +21,7 @@ public class WordleDictionary {
 
     public void turnLetter() {
         for (String word : words) {
-            if (word.contains("ё")) {
-                int index = word.indexOf("ё");
-                words.set(words.indexOf(word),
-                        new StringBuilder(word).replace(index, index + 1, "е").toString());
-            }
+            words.set(words.indexOf(word), word.replace("ё","е"));
         }
     }
 }
