@@ -1,0 +1,30 @@
+2026-08-15 15:56:33 | EXCEPTION
+Exception class: java.io.FileNotFoundException
+Message: words_ru.txt (Не удается найти указанный файл)
+Method: open0
+File: FileInputStream.java
+Line: -2
+Stack trace:
+java.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:185)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)
+java.base/java.io.FileReader.<init>(FileReader.java:60)
+ru.yandex.practicum.WordleDictionaryLoader.readFile(WordleDictionaryLoader.java:20)
+ru.yandex.practicum.Wordle.<clinit>(Wordle.java:18)
+
+2026-08-15 15:56:40 | EXCEPTION
+Exception class: java.io.FileNotFoundException
+Message: words_ru.txt (Не удается найти указанный файл)
+Method: open0
+File: FileInputStream.java
+Line: -2
+Stack trace:
+java.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:185)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)
+java.base/java.io.FileReader.<init>(FileReader.java:60)
+ru.yandex.practicum.WordleDictionaryLoader.readFile(WordleDictionaryLoader.java:20)
+ru.yandex.practicum.Wordle.<clinit>(Wordle.java:18)
+
